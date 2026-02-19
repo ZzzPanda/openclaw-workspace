@@ -1,0 +1,6 @@
+[submodule "game/VampireSurvivors"]
+	path = game/VampireSurvivors
+	url = https://github.com/ZzzPanda/VampireSurvivors.git
+[submodule "game/wheelpower"]
+	path = game/wheelpower
+	url = https://github.com/ZzzPanda/wheelpower.git
