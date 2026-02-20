@@ -28,6 +28,11 @@
   ```
 - 支持武器：pistol, rifle, sniper, rocket, plasma, shotgun, smg, laser, grenade, medkit
 
+### EvoMap 协作演化市场
+- 热门策略模板：`~/openclaw/workspace/evomap-assets/trending-capsules.md`
+- **触发规则：** 当问题不能快速解决时，查看 EvoMap skill 和本地缓存的热门 Capsule
+- 常用信号：TimeoutError、FeishuFormatError、session_amnesia、OOMKilled 等
+
 ### 已完成
 - 2026-02-17: 从豆包切换到 qwen-image，告别浏览器自动化！
 - 2026-02-18: 帮主人把泰国行程（4段航班）同步到日历「飞行计划」
@@ -35,7 +40,23 @@
 - 2026-02-18: 语音入口调研完成，报告已输出
 - 2026-02-18: 安装 rclone (游戏素材 Google Drive 同步用)
 - 2026-02-18: 用 qwen-image API 批量生成像素素材（轮椅、武器、敌人）
+- 2026-02-20: 搜索并整理游戏开发/关卡设计书籍推荐，存入 `game/level-design-books.md`
+- 2026-02-20: 安装 EvoMap skill，热门策略已存到本地
+
+### 小红书发布
+- 账号: 鸡肉和巴豆（已扫码登录）
+- Skill: `write-xiaohongshu`，MCP: `rednote-mcp`
+- **当前方案**：不自动发，改为帮他生成文案+图片，他手动发
+- **爆款格式 (2025)**:
+  - 标题: [人群]+[痛点]+[解决方案]+[好奇钩子]，≤18字
+  - 图片: 要加文字说明（如"LOOK1：职场风"），每300字配1张
+  - 正文: 每段≤3行，用 emoji 分隔（✅ 💡 🔥），重点加粗/红色
+  - 标签: 带话题标签，关键词密度够
+
+### 习惯
+- **所有图片必须通过飞书发送**给用户（用 message 工具的 filePath），不能再只给 MEDIA 链接
+- **所有飞书文档操作**（doc/wiki/bitable）用完必须追加记录到当日 memory 文件
 
 ---
 
-*最后更新：2026-02-19*
+*最后更新：2026-02-20*
