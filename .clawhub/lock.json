@@ -28,6 +28,10 @@
     "openclaw-godot-skill": {
       "version": "1.2.7",
       "installedAt": 1771475889716
+    },
+    "nas": {
+      "version": "1.0.0",
+      "installedAt": 1771636091316
     }
   }
 }

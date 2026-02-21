@@ -5,6 +5,7 @@
 - 引擎：Godot 4.x
 - 位置：`~/openclaw/workspace/game/wheelpower/`
 - 状态：立项，MVP 规划中
+- **战斗设计参考**：见 `memory/pve-combat-design.md`（来自 IKAROS 的 PVE 战斗设计笔记）
 - **核心机制：**
   - 主角有枪，准心跟随鼠标射击
   - 可以选择不同的轮椅载具
@@ -56,6 +57,7 @@
 ### 习惯
 - **所有图片必须通过飞书发送**给用户（用 message 工具的 filePath），不能再只给 MEDIA 链接
 - **所有飞书文档操作**（doc/wiki/bitable）用完必须追加记录到当日 memory 文件
+- **Memory 与 Obsidian 同步**：重要文档需要同时存到 Obsidian（vault: panda），保持双向同步
 
 ---
 

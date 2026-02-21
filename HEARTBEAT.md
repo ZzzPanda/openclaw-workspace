@@ -33,3 +33,7 @@
 ## 小红书发布 (Dingzhen 回来后)
 - [ ] 用户手动上传图片后，帮忙填写标题+正文
 - [ ] 设置可见性为"仅自己可见"
+
+## Todo
+- [ ] 打通 Obsidian 和 memory 和各种文档
+- [ ] 研究 https://www.redblobgames.com (游戏开发算法可视化教程)
