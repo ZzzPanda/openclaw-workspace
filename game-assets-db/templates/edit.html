@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>编辑素材 - 游戏素材库</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #1a1a2e; color: #eee; min-height: 100vh; }
+        .container { max-width: 600px; margin: 0 auto; padding: 20px; }
+        h1 { color: #00d9ff; margin-bottom: 30px; }
+        .form-group { margin-bottom: 20px; }
+        .form-group label { display: block; margin-bottom: 8px; color: #aaa; }
+        .form-group input, .form-group select, .form-group textarea { width: 100%; padding: 12px; border-radius: 8px; border: 1px solid #333; background: #16213e; color: #eee; font-size: 1rem; }
+        .form-group textarea { min-height: 80px; resize: vertical; }
+        .btn { padding: 12px 24px; border-radius: 8px; text-decoration: none; font-weight: 500; cursor: pointer; border: none; display: inline-block; }
+        .btn-primary { background: #00d9ff; color: #1a1a2e; }
+        .btn-secondary { background: #333; color: #eee; }
+        .actions { display: flex; gap: 15px; margin-top: 30px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>✏️ 编辑素材</h1>
+        <form method="post">
+            <div class="form-group">
+                <label>素材名称 *</label>
+                <input type="text" name="name" required value="{{ asset.name }}">
+            </div>
+            
+            <div class="form-group">
+                <label>分类 *</label>
+                <select name="category" required>
+                    <option value="sprite" {% if asset.category == 'sprite' %}selected{% endif %}>Sprite</option>
+                    <option value="tileset" {% if asset.category == 'tileset' %}selected{% endif %}>Tileset</option>
+                    <option value="ui" {% if asset.category == 'ui' %}selected{% endif %}>UI</option>
+                    <option value="effect" {% if asset.category == 'effect' %}selected{% endif %}>Effect</option>
+                    <option value="sound" {% if asset.category == 'sound' %}selected{% endif %}>Sound</option>
+                    <option value="music" {% if asset.category == 'music' %}selected{% endif %}>Music</option>
+                    <option value="font" {% if asset.category == 'font' %}selected{% endif %}>Font</option>
+                    <option value="other" {% if asset.category == 'other' %}selected{% endif %}>Other</option>
+                </select>
+            </div>
+            
+            <div class="form-group">
+                <label>子分类</label>
+                <input type="text" name="subcategory" value="{{ asset.subcategory or '' }}">
+            </div>
+            
+            <div class="form-group">
+                <label>标签</label>
+                <input type="text" name="tags" value="{{ asset.tags or '' }}">
+            </div>
+            
+            <div class="form-group">
+                <label>来源 URL</label>
+                <input type="url" name="source_url" value="{{ asset.source_url or '' }}">
+            </div>
+            
+            <div class="form-group">
+                <label>许可证</label>
+                <select name="license">
+                    <option value="Unknown" {% if asset.license == 'Unknown' %}selected{% endif %}>Unknown</option>
+                    <option value="CC0" {% if asset.license == 'CC0' %}selected{% endif %}>CC0</option>
+                    <option value="MIT" {% if asset.license == 'MIT' %}selected{% endif %}>MIT</option>
+                    <option value="Free" {% if asset.license == 'Free' %}selected{% endif %}>Free</option>
+                    <option value="Commercial" {% if asset.license == 'Commercial' %}selected{% endif %}>Commercial</option>
+                </select>
+            </div>
+            
+            <div class="form-group">
+                <label>格式</label>
+                <input type="text" name="format" value="{{ asset.format or '' }}">
+            </div>
+            
+            <div class="form-group">
+                <label>分辨率</label>
+                <input type="text" name="resolution" value="{{ asset.resolution or '' }}">
+            </div>
+            
+            <div class="form-group">
+                <label>颜色风格</label>
+                <input type="text" name="color_style" value="{{ asset.color_style or '' }}">
+            </div>
+            
+            <div class="form-group">
+                <label>关联项目</label>
+                <input type="text" name="game_project" value="{{ asset.game_project or '' }}">
+            </div>
+            
+            <div class="form-group">
+                <label>备注</label>
+                <textarea name="notes">{{ asset.notes or '' }}</textarea>
+            </div>
+            
+            <div class="actions">
+                <button type="submit" class="btn btn-primary">保存更新</button>
+                <a href="/" class="btn btn-secondary">取消</a>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

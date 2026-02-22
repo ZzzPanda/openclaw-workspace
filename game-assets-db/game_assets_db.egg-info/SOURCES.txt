@@ -1,0 +1,6 @@
+pyproject.toml
+game_assets_db.egg-info/PKG-INFO
+game_assets_db.egg-info/SOURCES.txt
+game_assets_db.egg-info/dependency_links.txt
+game_assets_db.egg-info/requires.txt
+game_assets_db.egg-info/top_level.txt

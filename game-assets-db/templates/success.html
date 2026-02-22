@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>成功 - 游戏素材库</title>
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, sans-serif; background: #1a1a2e; color: #eee; min-height: 100vh; display: flex; align-items: center; justify-content: center; }
+        .success { text-align: center; }
+        .message { font-size: 1.5rem; color: #00d9ff; margin-bottom: 30px; }
+        .btn { padding: 12px 24px; border-radius: 8px; text-decoration: none; font-weight: 500; background: #00d9ff; color: #1a1a2e; display: inline-block; }
+    </style>
+</head>
+<body>
+    <div class="success">
+        <div class="message">{{ message }}</div>
+        <a href="/" class="btn">返回列表</a>
+    </div>
+    <script>setTimeout(() => location.href = '/', 1500);</script>
+</body>
+</html>

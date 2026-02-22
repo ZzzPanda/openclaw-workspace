@@ -1,0 +1,15 @@
+Metadata-Version: 2.4
+Name: game-assets-db
+Version: 0.1.0
+Summary: 游戏素材库 Web UI
+Requires-Python: >=3.10
+Requires-Dist: fastapi>=0.104.0
+Requires-Dist: uvicorn>=0.24.0
+Requires-Dist: jinja2>=3.1.0
+Requires-Dist: python-multipart>=0.0.6
+Provides-Extra: test
+Requires-Dist: pytest>=7.0.0; extra == "test"
+Requires-Dist: pytest-cov>=4.0.0; extra == "test"
+Requires-Dist: pytest-asyncio>=0.21.0; extra == "test"
+Requires-Dist: httpx>=0.25.0; extra == "test"
+Requires-Dist: playwright>=1.40.0; extra == "test"
