@@ -54,6 +54,9 @@
   - 正文: 每段≤3行，用 emoji 分隔（✅ 💡 🔥），重点加粗/红色
   - 标签: 带话题标签，关键词密度够
 
+### 飞书群聊
+- 日报群 ID: oc_816ba7e2a49043650d23cb5011b8defb
+
 ### 习惯
 - **飞书发图片**：必须先存到 `~/.openclaw/media/outbound/`，然后用 filePath 发送（不要用 /tmp 或 MEDIA 链接，会失败）
 - **所有图片必须通过飞书发送**给用户（用 message 工具的 filePath），不能再只给 MEDIA 链接

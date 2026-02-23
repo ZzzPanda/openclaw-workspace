@@ -32,6 +32,10 @@
     "nas": {
       "version": "1.0.0",
       "installedAt": 1771636091316
+    },
+    "agent-browser": {
+      "version": "0.2.0",
+      "installedAt": 1771823951059
     }
   }
 }
