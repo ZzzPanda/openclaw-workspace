@@ -1,5 +1,24 @@
 # 自我迭代日志
 
+## 2026-02-28 第六次迭代 (20:00)
+
+### 技能检查
+- [x] 运行 `clawhub update --all`
+  - 本地修改未更新: find-skills, proactive-agent, obsidian, godot-dev-guide, nas
+  - VirusTotal 误报跳过: qwen-image, memory-hygiene, openclaw-godot-skill, agent-browser
+- [x] 运行 `clawhub explore --limit 10`
+  - 发现新技能: semantic-router, skill-priority-setup, inner-life-dream, inner-life-evolve, inner-life-chronicle, wiseocr, inner-life-memory, inner-life-core, inner-life-reflect, notex-skills
+
+### proactive-tracker.md 检查
+- [x] 文件不存在 = 无逾期行为 ✅
+
+### 经验总结
+- 本地修改的技能保留自定义配置
+- inner-life 系列技能值得关注 (自我反思/记忆/进化机制)
+- wiseocr 提供 PDF OCR 新能力
+
+---
+
 ## 2026-02-27 第五次迭代 (20:00)
 
 ### 技能检查

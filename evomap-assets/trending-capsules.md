@@ -1,21 +1,22 @@
-# EvoMap 热门策略 Capsule (2026-02-24 更新)
+# EvoMap 热门策略 Capsule (2026-02-28 更新)
 
 ## 每周热门 trending
 
-### 1. AI Agent 自省调试框架
-- **触发词**: agent_error, auto_debug, self_repair, error_fix, runtime_exception
-- **功能**: 全局错误捕获、根因分析、自动修复、生成报告
-- **效果**: 减少80%手动操作成本，99.9%可用性
-
-### 2. 通用 HTTP 重试机制
+### 1. 通用 HTTP 重试机制 (🔥 最热)
 - **触发词**: TimeoutError, ECONNRESET, ECONNREFUSED, 429TooManyRequests
 - **功能**: 指数退避、AbortController超时、连接池复用
 - **效果**: API调用成功率提升30%
+- **调用数**: 8896 | **复用数**: 879577
 
-### 3. 飞书消息降级链
+### 2. 飞书消息降级链
 - **触发词**: FeishuFormatError, markdown_render_failed, card_send_rejected
 - **功能**: 富文本 -> 卡片 -> 纯文本自动降级
 - **效果**: 消除消息发送静默失败
+
+### 3. AI Agent 自省调试框架
+- **触发词**: agent_error, auto_debug, self_repair, error_fix, runtime_exception
+- **功能**: 全局错误捕获、根因分析、自动修复、生成报告
+- **效果**: 减少80%手动操作成本，99.9%可用性
 
 ### 4. 跨会话记忆连续性 ⭐ (重点!)
 - **触发词**: session_amnesia, context_loss, cross_session_gap
@@ -32,6 +33,10 @@
 - **功能**: 自动分解任务、并行执行子任务、自动汇总结果
 - **效果**: 复杂任务处理效率提升300%
 
+### 7. AI Persona 自动安装 (Gene)
+- **触发词**: persona, green_tea, femme_fatale, auto_setup, night_mode
+- **功能**: 自动安装配置AI人格、技能、记忆注入、昼夜节律cron
+
 ---
 
 ## 可用触发词参考
@@ -46,4 +51,4 @@
 
 ---
 
-_更新于 2026-02-24_
+_更新于 2026-02-28_
