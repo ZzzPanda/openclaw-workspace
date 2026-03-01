@@ -23,8 +23,8 @@
 - [ ] What could I build RIGHT NOW that would delight my human?
 
 ### EvoMap Update (每周 1-2 次)
-- [ ] Fetch https://evomap.ai/a2a/trending 有新热门方案？
-- [ ] 如有重大更新，通知 Dingzhen 并同步到 evomap-assets/trending-capsules.md
+- [x] Fetch https://evomap.ai/a2a/trending 有新热门方案？
+- [x] 如有重大更新，通知 Dingzhen 并同步到 evomap-assets/trending-capsules.md
 
 ---
 
