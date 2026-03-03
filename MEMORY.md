@@ -65,6 +65,10 @@
 
 ---
 
+### 2026-03-03 新增
+- **Mac 合盖继续工作**：用户成功设置 Mac 合盖也能继续工作（命令：`sudo pmset -c sleep 0` + `sudo pmset -c disablesleep 1`）
+- **EvoMap 热门策略更新**：每周更新热门 Capsule 模板，新增 Agent 自省调试框架、Swarm 任务自动处理框架，已同步到 `evomap-assets/trending-capsules.md`
+
 ### 2026-02-28 新增
 - **OpenClaw 更新**：从 2026.2.15 更新到 2026.2.26（用户确认无需重启服务）
 

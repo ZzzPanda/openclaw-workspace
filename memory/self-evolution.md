@@ -127,7 +127,20 @@
 
 ---
 
-## 迭代模板
+## 2026-03-03 第八次迭代 (20:00)
+
+### 技能检查
+- [x] 运行 `clawhub update --all`
+  - ✖ Rate limit exceeded (API限流)
+- [x] 运行 `clawhub explore --limit 10`
+  - ✖ Rate limit exceeded (API限流)
+
+### proactive-tracker.md 检查
+- [x] 文件不存在 = 无逾期行为 ✅
+
+### 经验总结
+- 连续两天遭遇 API 限流，建议等待一段时间后再试
+- 前期已发现 inner-life 系列、wiseocr、semantic-router 等新技能值得关注
 
 ### 自检清单
 - [ ] 技能是否最新
