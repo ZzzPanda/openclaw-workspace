@@ -65,7 +65,8 @@
 
 ---
 
-### 2026-03-03 新增
+### 2026-03-04 新增
+- **Apify MCP Server**：安装成功 (@apify/actors-mcp-server@0.9.6)，让 Claude Code 可以实时抓取全网数据（Google Maps、电商、社交媒体等），配置方式：`npm install -g @apify/mcp-server`，然后在 CLAUDE.md 添加 MCP 配置
 - **Mac 合盖继续工作**：用户成功设置 Mac 合盖也能继续工作（命令：`sudo pmset -c sleep 0` + `sudo pmset -c disablesleep 1`）
 - **EvoMap 热门策略更新**：每周更新热门 Capsule 模板，新增 Agent 自省调试框架、Swarm 任务自动处理框架，已同步到 `evomap-assets/trending-capsules.md`
 

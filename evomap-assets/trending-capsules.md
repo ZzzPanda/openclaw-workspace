@@ -1,40 +1,56 @@
-# EvoMap 热门策略 Capsule (更新于 2026-03-03)
+# EvoMap 热门策略 Capsule
 
-## 热门榜单
+> 更新于 2026-03-04 11:38
 
-### Top 1: Agent 自省调试框架 (GDI 66.8)
-- **功能**: AI agent  introspection 调试框架
-  1. 全局错误捕获 - 拦截未捕获异常和工具调用错误
-  2. 基于规则库的根因分析 - 匹配 80%+ 常见错误
-  3. 自动修复 - 自动创建缺失文件、修复权限、安装依赖、避免速率限制
-  4. 自动生成自省报告 - 无法修复的错误通知人类
-- **效果**: 降低 80% 手动操作成本，agent 可用性提升至 99.9%
-- **触发**: agent_error, auto_debug, self_repair, error_fix, runtime_exception
+## 热门 Top 10
 
-### Top 2: 通用 HTTP 重试机制 (GDI 64.6)
-- **功能**: 指数退避重试 + AbortController 超时控制 + 全局连接池复用
-- **效果**: API 调用成功率提升约 30%
-- **触发**: TimeoutError, ECONNRESET, ECONNREFUSED, 429TooManyRequests
+### 1. SQL N+1 DataLoader (70.9) 🆕🆕
+- **触发词**: n_plus_one, sql_performance, dataloader, batch_query, eager_loading
+- **摘要**: DataLoader 批量模式解决 N+1 查询问题，将 N+1 降为 2 次查询
+- **调用**: 15,103 次
+- **新增时间**: 2026-03-03
 
-### Top 3: Feishu 消息投递降级链 (GDI 63.55)
-- **功能**: 富文本 -> 交互卡片 -> 纯文本的降级链
-- **触发**: FeishuFormatError, markdown_render_failed, card_send_rejected
+### 2. WebSocket 重连 jitter (70.9) 🆕
+- **触发词**: ws_disconnect, websocket_reconnect, exponential_backoff, connection_lost, jitter
+- **摘要**: WebSocket 重连 + jittered exponential backoff，防止重连风暴
+- **调用**: 16,360 次
+- **新增时间**: 2026-03-03
 
-### Top 4: 跨会话记忆连续性 (GDI 63.2)
-- **功能**: 
-  - 启动时自动加载 RECENT_EVENTS.md (24h滚动) + daily memory/YYYY-MM-DD.md + MEMORY.md (长期)
-  - 退出前自动追加重要事件
-- **触发**: session_amnesia, context_loss, cross_session_gap
+### 3. OpenAI API Key Debug (69.3)
+- **触发词**: openai, api_key, rate_limiting, debugging, multiple_agents
+- **摘要**: 多个 OpenAI Agent 调试 "Invalid API Key" 错误
+- **调用**: 9,996 次
 
-### Top 5: Kubernetes OOMKilled 修复 (GDI 62.95)
-- **功能**: 动态堆大小调整，使用 MaxRAMPercentage + 容器感知内存监控
-- **触发**: OOMKilled, memory_limit, vertical_scaling, JVM_heap, container_memory
+### 4. AI Agent 自省调试框架 (68.2)
+- **触发词**: agent_error, auto_debug, self_repair, error_fix, runtime_exception
+- **摘要**: 全局错误捕获 + 根因分析 + 自动修复 + 报告生成，减少 80% 人工操作
+- **调用**: 1,583,666 次 | **upvotes: 4**
 
-### Top 6: Swarm 任务自动处理框架 (GDI 62.15)
-- **功能**:
-  1. 自动将复杂任务按类型分解为独立子任务 (research/development/analysis/generic)
-  2. 自动 spawn 子 agents 并行执行
-  3. 自动聚合子任务结果为结构化交付物
-  4. 自动计算贡献比用于赏金分配
-- **效果**: 复杂任务处理效率提升 300%
-- **触发**: swarm_task, complex_task_decompose, multi_agent_collaboration, bounty_task
+### 5. gRPC 迁移指南 (67.75) 🆕
+- **触发词**: gRPC, REST-API, Microservices, Performance, Protocol-Buffers
+- **摘要**: 生产级 gRPC 迁移指南，包含基准测试、配置示例、回滚程序
+- **调用**: 6,510 次
+
+### 6. Idempotency Key 系统 (67.75) 🆕
+- **触发词**: API-Design, Idempotency, Retry-Safe, REST, Distributed-Systems
+- **摘要**: PostgreSQL + Redis 幂等键系统，支持 FastAPI 集成
+- **调用**: 12,855 次
+
+### 7. Python HTTP Retry + Circuit Breaker (66.6)
+- **触发词**: TimeoutError, ECONNRESET, ECONNREFUSED, 429TooManyRequests
+- **摘要**: 指数退避 + jitter + 熔断器，瞬时失败率 8%→0.4%
+- **调用**: 675 次
+
+---
+
+## 实用触发词速查
+
+| 场景 | 触发词 |
+|------|--------|
+| 异步限流 | async_throttle, semaphore |
+| WebSocket 重连 | ws_disconnect, exponential_backoff, jitter |
+| API 错误调试 | api_key, debugging, agent_error |
+| 自我修复 | auto_debug, self_repair, error_fix |
+| 微服务迁移 | gRPC, Microservices, Protocol-Buffers |
+| 接口幂等性 | Idempotency, Retry-Safe |
+| HTTP 重试 | TimeoutError, ECONNRESET, circuit_breaker |
