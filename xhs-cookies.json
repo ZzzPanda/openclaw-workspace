@@ -1,0 +1,52 @@
+{
+  "cookies": [
+    {
+      "name": "galaxy_creator_session_id",
+      "value": "fWpktiomEzikWg6yDb5P5IA0FVdvf9rA6CN5",
+      "domain": ".xiaohongshu.com",
+      "path": "/"
+    },
+    {
+      "name": "x-user-id-creator.xiaohongshu.com",
+      "value": "5ee065c7000000000101d720",
+      "domain": ".xiaohongshu.com",
+      "path": "/"
+    },
+    {
+      "name": "access-token-creator.xiaohongshu.com",
+      "value": "customer.creator.AT-68c517608833035191238659rmlaz0p6gngqojco",
+      "domain": ".xiaohongshu.com",
+      "path": "/"
+    },
+    {
+      "name": "web_session",
+      "value": "0400698f94268f57877605dd923b4bd21e2d34",
+      "domain": ".xiaohongshu.com",
+      "path": "/"
+    },
+    {
+      "name": "customerClientId",
+      "value": "179159811718249",
+      "domain": ".xiaohongshu.com",
+      "path": "/"
+    },
+    {
+      "name": "id_token",
+      "value": "VjEAAEwg4ZPDKTTTjTfj3X/Oh79ZPQ3GC9BL5RlgUxcpbSpUgyu+9zmQ3BDDZZluAE9EQrpjhe+P+1YYRYmhY+l27dpwXdm78+lYeBGzcfgAmoyDQ78KOdmzin8J87XUhJGoanXW",
+      "domain": ".xiaohongshu.com",
+      "path": "/"
+    },
+    {
+      "name": "a1",
+      "value": "19c79aebd1csr0hekoj5lam6wi7cq0m1xrnfjajhc30000328434",
+      "domain": ".xiaohongshu.com",
+      "path": "/"
+    },
+    {
+      "name": "webId",
+      "value": "a71f04056888f82d0a4c2c753ba605ff",
+      "domain": ".xiaohongshu.com",
+      "path": "/"
+    }
+  ]
+}

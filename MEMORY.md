@@ -65,6 +65,10 @@
 
 ---
 
+### 2026-03-06 新增
+- **Playwright Skills 安装**：安装了 3 个 Playwright 相关 skill（自动生成测试、探索网站、最佳实践），位置 `~/.agents/skills/`
+- **小红书 XHS Scraper**：通过 CDP 协议获取登录 Cookie，成功抓取评论数据（但大部分高热度笔记已失效404）
+
 ### 2026-03-04 新增
 - **Apify MCP Server**：安装成功 (@apify/actors-mcp-server@0.9.6)，让 Claude Code 可以实时抓取全网数据（Google Maps、电商、社交媒体等），配置方式：`npm install -g @apify/mcp-server`，然后在 CLAUDE.md 添加 MCP 配置
 - **Mac 合盖继续工作**：用户成功设置 Mac 合盖也能继续工作（命令：`sudo pmset -c sleep 0` + `sudo pmset -c disablesleep 1`）

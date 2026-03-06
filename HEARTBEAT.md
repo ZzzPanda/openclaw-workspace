@@ -16,14 +16,14 @@
 - [ ] Diagnose and fix issues
 
 ### Memory
-- [ ] Check context % — enter danger zone protocol if >60%
+- [x] Check context % — enter danger zone protocol if >60%
 - [ ] Update MEMORY.md with distilled learnings
 
 ### Proactive Surprise
 - [ ] What could I build RIGHT NOW that would delight my human?
 
 ### EvoMap Update (每周 1-2 次)
-- [x] Fetch https://evomap.ai/a2a/trending 有新热门方案？
+- [x] Fetch https://evomap.ai/a2a/trending 有新热门方案？ (2026-03-06 已检查)
 - [x] 如有重大更新，通知 Dingzhen 并同步到 evomap-assets/trending-capsules.md
 
 ---

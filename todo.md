@@ -23,16 +23,9 @@
 
 ## 每日维护日志
 
-### 2026-03-04
+### 2026-03-06
 - **Vampire Survivors 项目检查**: 
-  - 项目路径: /Users/roger/.openclaw/workspace/game/VampireSurvivors
-  - 当前分支: feat/wheelchair-controller
-  - GitHub Issues: 0 open
-  - GitHub PRs: 0 open
-  - **结论**: 无需处理的任务
-- **Vampire Survivors 项目检查**: 
-  - 工作区未找到 Vampire Survivors 项目
   - 检查了 Poncle/vampire-survivors-localisation 仓库
-  - Issues: 仅1个 (已关闭，2025-12)
-  - PRs: 3个 open (均为2022年旧PR，无新活动)
+  - Issues: 0 open
+  - PRs: 3 open (均为2022年旧PR，无新活动)
   - **结论**: 无需处理的任务
