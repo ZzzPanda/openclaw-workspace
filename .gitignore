@@ -19,3 +19,11 @@ Thumbs.db
 *.zip
 *.png
 *.jpg
+
+# Godot 4
+*.gd.uid
+*.tres.uid
+*.tscn.uid
+
+# Memory
+memory/ongoing-tasks.md
