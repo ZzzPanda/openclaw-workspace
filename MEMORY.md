@@ -65,6 +65,11 @@
 
 ---
 
+### 2026-03-11 新增
+- **OpenClaw PM2 迁移**：将 Gateway 服务从 launchd 迁移到 PM2 管理（原因：launchd 有时会卡住不自动重启）
+- **Niko 飞书 Bot**：新增第二个飞书 bot「美味软脚虾」，AppID: cli_a93be196e3789bde，配对成功，用户 ID: ou_2fa349acf49b639d03a8fb5cae5dd3b3
+- **AI 工具资讯 cron 任务**：改用 niko bot 推送，推送群聊: oc_88ef5b4274d312abf28fefd254ef3fec，发布时间：周一/四 11:00
+
 ### 2026-03-06 新增
 - **Playwright Skills 安装**：安装了 3 个 Playwright 相关 skill（自动生成测试、探索网站、最佳实践），位置 `~/.agents/skills/`
 - **小红书 XHS Scraper**：通过 CDP 协议获取登录 Cookie，成功抓取评论数据（但大部分高热度笔记已失效404）
