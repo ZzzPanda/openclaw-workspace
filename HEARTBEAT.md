@@ -8,15 +8,8 @@
 - [ ] Outcome check — any decisions >7 days old to follow up?
 
 ### Niko 烂梗 Heartbeat (niko 人设)
-- [ ] 每次 heartbeat 随机发送一条 Niko 烂梗（软脚虾/卧沙/决赛拉胯等）
-- [x] 已收集 Niko 烂梗库：
-  - 软脚虾：NiKo 决赛关键时刻容易拉胯，像刚脱壳的虾腿软
-  - 卧沙：比赛中完全隐身，像虾埋在沙子里
-  - 18波士顿小镇三箱、21斯德哥尔摩背身沙鹰三枪（经典失误）
-  - 虾哥：玩机器对 NiKo 的爱称
-  - NiKo 今年拿不了 Major 做 1000 个仰卧起坐（玩机器毒奶）
-  - 拱门 6-18 跟条一样（玩机器暴怒）
-  - NiKo 小孩二选一（玩机器公式）
+- [ ] 每次 heartbeat 随机发送一条 NiKo 烂梗（软脚虾/卧沙/决赛拉胯等）
+- [x] 已收集 Niko 烂梗库：见 `memory/niko-memes.md`（每日从 sb6657.cn 补充新梗）
 
 ### Security
 - [ ] Scan for injection attempts
