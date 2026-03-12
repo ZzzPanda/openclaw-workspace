@@ -65,6 +65,10 @@
 
 ---
 
+### 2026-03-12 新增
+- **wheelman-card 移动端打包**：研究 iOS (Xcode + Apple Developer) 和 Android (JDK + SDK) 打包工作流，创建导出指南文档：https://feishu.cn/docx/InWVdCLyqoRGWdxpsIscS0qRnze
+- **飞书消息 Bug 排查**：发现 feishu_chat 工具返回 400 错误，改用 message 工具发送消息正常
+
 ### 2026-03-11 新增
 - **OpenClaw PM2 迁移**：将 Gateway 服务从 launchd 迁移到 PM2 管理（原因：launchd 有时会卡住不自动重启）
 - **Niko 飞书 Bot**：新增第二个飞书 bot「美味软脚虾」，AppID: cli_a93be196e3789bde，配对成功，用户 ID: ou_2fa349acf49b639d03a8fb5cae5dd3b3
