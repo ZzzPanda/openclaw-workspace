@@ -1,5 +1,17 @@
 # MEMORY.md - 长期记忆
 
+### 正在做的项目
+- **Slay The Robot** (Godot 4.x)
+  - [ ] Android 打包修复
+  - [ ] 测试 APK 运行
+  - [ ] 卡牌战斗位移系统
+  - [ ] 研究动画管线（视频→帧动画）
+
+### 未来可能做的
+- **WheelPower 轮椅大乱斗** (Godot 4.x Roguelite)
+- **游戏资产管道** (Qwen Image API 生成16x16像素素材)
+- **Vampire Survivors 改造** (轮椅控制器)
+
 ### WheelPower 轮椅大乱斗
 - 类型：俯视角科幻 Roguelite 射击游戏
 - 引擎：Godot 4.x
@@ -65,7 +77,8 @@
 
 ---
 
-### 2026-03-12 新增
+### 2026-03-14 新增
+- **飞书 message 工具报错**：LarkClient[default]: appId and appSecret are required。排查发现 openclaw.json 有 feishu 配置但 message 工具可能使用独立客户端，子工具（feishu_im_user_message 等）正常工作
 - **wheelman-card 移动端打包**：研究 iOS (Xcode + Apple Developer) 和 Android (JDK + SDK) 打包工作流，创建导出指南文档：https://feishu.cn/docx/InWVdCLyqoRGWdxpsIscS0qRnze
 - **飞书消息 Bug 排查**：发现 feishu_chat 工具返回 400 错误，改用 message 工具发送消息正常
 
