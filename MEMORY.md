@@ -77,6 +77,11 @@
 
 ---
 
+### 2026-03-15 新增
+- **Slay The Robot 素材生成**: 使用 Qwen Image API 成功生成 16 个游戏素材（5个小机器人敌人、1个中型机器人、1个大型BOSS、2个角色立绘、3个神器图标、4个卡牌边框）
+- **GitHub PR 状态**: PR #5 和 #6（Android 打包修复）合并失败，有冲突需要手动处理
+- 详细素材 URL 记录在: memory/slay-the-robot-generated-assets.md
+
 ### 2026-03-14 新增
 - **飞书 message 工具报错**：LarkClient[default]: appId and appSecret are required。排查发现 openclaw.json 有 feishu 配置但 message 工具可能使用独立客户端，子工具（feishu_im_user_message 等）正常工作
 - **wheelman-card 移动端打包**：研究 iOS (Xcode + Apple Developer) 和 Android (JDK + SDK) 打包工作流，创建导出指南文档：https://feishu.cn/docx/InWVdCLyqoRGWdxpsIscS0qRnze
