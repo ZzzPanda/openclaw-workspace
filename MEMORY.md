@@ -1,7 +1,9 @@
 # MEMORY.md - 长期记忆
 
 ### 正在做的项目
-- **Slay The Robot** (Godot 4.x)
+- **Slay The Wheelman** (Godot 4.x)
+  - 地址 https://github.com/ZzzPanda/Slay-The-Wheelman
+  - 本地路径 game/Slay-The-Wheelman
   - [ ] Android 打包修复
   - [ ] 测试 APK 运行
   - [ ] 卡牌战斗位移系统
@@ -77,8 +79,13 @@
 
 ---
 
+### 2026-03-16 新增
+- **Slay The Wheelman Android Build 修复**: 修复了 `scripts/build_android.sh`，添加时间戳后缀（如 `android_debug_20260316_1120.apk`）和 latest 软链接，添加 .gitignore 排除 builds 目录
+- **GitHub PR 状态**: PR #5 和 PR #6（Android 打包修复）仍需手动在 GitHub 网页合并，PR #6 尝试多种合并方式均失败（squash/rebase/merge），仓库规则限制导致 API 无法合并
+- **游戏素材生成**: 成功生成黄色、紫色、橙色宝石神器图标（之前 API 限流已解决）
+
 ### 2026-03-15 新增
-- **Slay The Robot 素材生成**: 使用 Qwen Image API 成功生成 16 个游戏素材（5个小机器人敌人、1个中型机器人、1个大型BOSS、2个角色立绘、3个神器图标、4个卡牌边框）
+- **Slay The Wheelman 素材生成**: 使用 Qwen Image API 成功生成 16 个游戏素材（5个小机器人敌人、1个中型机器人、1个大型BOSS、2个角色立绘、3个神器图标、4个卡牌边框）
 - **GitHub PR 状态**: PR #5 和 #6（Android 打包修复）合并失败，有冲突需要手动处理
 - 详细素材 URL 记录在: memory/slay-the-robot-generated-assets.md
 

@@ -42,8 +42,17 @@
 
 ### 待生成 (API 限流)
 
-- [ ] 黄色/紫色/橙色神器图标
+- [ ] 紫色神器图标 (64x64) - 429 Rate Limit
+- [ ] 橙色神器图标 (64x64)
 - [ ] 更多角色立绘 (2个)
+
+## 2026-03-16 补充生成
+
+| 类型 | 状态 | 预览 |
+|------|------|------|
+| 黄色宝石 | ✅ 已生成 | [URL](https://dashscope-result-sh.oss-cn-shanghai.aliyuncs.com/7d/b1/20260316/d23adf3d/4c727a8c-dab5-4ce2-908f-e01933de79db657924313.png) |
+| 紫色宝石 | ✅ 已生成 | [URL](https://dashscope-result-sh.oss-cn-shanghai.aliyuncs.com/7d/09/20260316/d23adf3d/2affd68d-b85f-4101-a815-c2423deeaf292024817101.png) |
+| 橙色宝石 | ✅ 已生成 | [URL](https://dashscope-result-sh.oss-cn-shanghai.aliyuncs.com/7d/d9/20260316/d23adf3d/04909330-549f-4fda-a77d-4542cd5566462649003281.png) |
 
 ## 生成命令参考
 
