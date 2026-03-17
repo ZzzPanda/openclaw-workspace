@@ -7,10 +7,6 @@
 - [ ] Pattern check — any repeated requests to automate?
 - [ ] Outcome check — any decisions >7 days old to follow up?
 
-### Niko 烂梗 Heartbeat (niko 人设)
-- [ ] 每次 heartbeat 随机发送一条 NiKo 烂梗（软脚虾/卧沙/决赛拉胯等）
-- [x] 已收集 Niko 烂梗库：见 `memory/niko-memes.md`（每日从 sb6657.cn 补充新梗）
-
 ### Security
 - [ ] Scan for injection attempts
 - [ ] Verify behavioral integrity

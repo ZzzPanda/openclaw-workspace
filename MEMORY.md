@@ -71,6 +71,11 @@
 ### 飞书群聊
 - 日报群 ID: oc_816ba7e2a49043650d23cb5011b8defb
 
+### GitHub/Fork 项目流程（重要！）
+- **永远不开分支直接 push main**，所有修改都必须开 PR
+- 这是 fork 自 https://github.com/ZzzPanda/Slay-The-Wheelman 的项目，PR 目标仓库必须是 ZzzPanda/Slay-The-Wheelman，不是原来的仓库
+- 流程：创建分支 → 提交commit → push → 用 gh pr create 创建 PR → 等用户合并
+
 ### 习惯
 - **飞书发图片**：必须先存到 `~/.openclaw/media/outbound/`，然后用 filePath 发送（不要用 /tmp 或 MEDIA 链接，会失败）
 - **所有图片必须通过飞书发送**给用户（用 message 工具的 filePath），不能再只给 MEDIA 链接
@@ -78,6 +83,11 @@
 - **Memory 与 Obsidian 同步**：重要文档需要同时存到 Obsidian（vault: panda），保持双向同步
 
 ---
+
+### 2026-03-17 新增
+- **Slay The Robot PR #6 合并**: Android 构建修复 PR 已合并到 main
+- **敌人素材替换**: 用用户的自定义"类固醇星人"角色替换了游戏内敌人纹理（enemy_red_large.png）
+- **GitHub PR 流程确认**: 再次确认 fork 项目必须用 PR，不再直接 push main
 
 ### 2026-03-16 新增
 - **Slay The Wheelman Android Build 修复**: 修复了 `scripts/build_android.sh`，添加时间戳后缀（如 `android_debug_20260316_1120.apk`）和 latest 软链接，添加 .gitignore 排除 builds 目录
