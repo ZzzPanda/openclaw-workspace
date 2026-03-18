@@ -84,7 +84,8 @@
 
 ---
 
-### 2026-03-17 新增
+### 2026-03-18 新增
+- **轮椅枪手 wheel-shooter 游戏**: 新 HTML5 Canvas 游戏项目，GitHub: ZzzPanda/wheel-shooter。支持 sprite 素材（player.png, railgun.png），模块化结构（config.js, sprites.js, game.js）
 - **Slay The Robot PR #6 合并**: Android 构建修复 PR 已合并到 main
 - **敌人素材替换**: 用用户的自定义"类固醇星人"角色替换了游戏内敌人纹理（enemy_red_large.png）
 - **GitHub PR 流程确认**: 再次确认 fork 项目必须用 PR，不再直接 push main
