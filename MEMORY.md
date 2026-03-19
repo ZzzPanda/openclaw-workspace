@@ -84,6 +84,10 @@
 
 ---
 
+### 2026-03-19 新增
+- **Slay The Wheelman 击退系统**: 新增 ActionKnockback.gd（击退动作）和 ActionRecoil.gd（后坐力动作），更新 Signals.gd 添加相关信号
+- **Android 构建成功**: 打包 android_debug_20260319_0400.apk，位置战斗系统计划中（待完成：WeaponData.gd, 扩展 CardData/EnemyData, ValidatorAttackRange.gd）
+
 ### 2026-03-18 新增
 - **轮椅枪手 wheel-shooter 游戏**: 新 HTML5 Canvas 游戏项目，GitHub: ZzzPanda/wheel-shooter。支持 sprite 素材（player.png, railgun.png），模块化结构（config.js, sprites.js, game.js）
 - **Slay The Robot PR #6 合并**: Android 构建修复 PR 已合并到 main
