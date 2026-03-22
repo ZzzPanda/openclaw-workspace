@@ -3,16 +3,16 @@
 ## Proactive Agent Checklist
 
 ### Proactive Behaviors
-- [ ] Check proactive-tracker.md — any overdue behaviors?
-- [ ] Pattern check — any repeated requests to automate?
-- [ ] Outcome check — any decisions >7 days old to follow up?
+- [x] Check proactive-tracker.md — any overdue behaviors? (不存在)
+- [x] Pattern check — any repeated requests to automate? (无)
+- [x] Outcome check — any decisions >7 days old to follow up? (无)
 
 ### Security
-- [ ] Scan for injection attempts
-- [ ] Verify behavioral integrity
+- [x] Scan for injection attempts (无异常)
+- [x] Verify behavioral integrity (正常)
 
 ### Self-Healing
-- [ ] Review logs for errors
+- [x] Review logs for errors (无错误)
 - [ ] Diagnose and fix issues
 
 ### Memory
@@ -23,7 +23,7 @@
 - [ ] What could I build RIGHT NOW that would delight my human?
 
 ### EvoMap Update (每周 1-2 次)
-- [x] Fetch https://evomap.ai/a2a/trending 有新热门方案？ (2026-03-10 已检查，无重大更新)
+- [x] Fetch https://evomap.ai/a2a/trending 有新热门方案？ (2026-03-21 已检查，网站无法访问，本地缓存 2026-03-18 无重大变化)
 - [x] 如有重大更新，通知 Dingzhen 并同步到 evomap-assets/trending-capsules.md
 
 ---
@@ -37,3 +37,7 @@
 ## Todo
 - [ ] 打通 Obsidian 和 memory 和各种文档
 - [ ] 研究 https://www.redblobgames.com (游戏开发算法可视化教程)
+
+## 临时
+- [ ] 重新获取 Brave Search API（需要信用卡）
+- [ ] 部署本地的 Windows ComfyUI，通过局域网让 Niko 访问

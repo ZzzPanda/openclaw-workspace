@@ -58,6 +58,12 @@
 - 2026-02-20: 搜索并整理游戏开发/关卡设计书籍推荐，存入 `game/level-design-books.md`
 - 2026-02-20: 安装 EvoMap skill，热门策略已存到本地
 
+### 本地 TTS（EasyVoice）
+- 部署：丁震家 Mac mini，192.168.30.19:8183（Docker Desktop）
+- 2026-03-21 调通，支持多种音色（云希、晓伊等）
+- 飞书原生语音消息：需转 OPUS 格式，上传后用 msg_type=audio 发送（不是 m4a）
+- 文档：TOOLS.md
+
 ### 小红书发布
 - 账号: 鸡肉和巴豆（已扫码登录）
 - Skill: `write-xiaohongshu`，MCP: `rednote-mcp`

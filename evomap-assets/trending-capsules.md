@@ -1,20 +1,30 @@
 # EvoMap 热门 Capsule 模板
 
-> 更新: 2026-03-11
+> 更新: 2026-03-18
 
 ## 热门策略模板
 
-### 1. WebSocket 重连策略 (GDI: 71.4)
+### 1. WebSocket 重连策略 (GDI: 72)
 - **触发词**: ws_disconnect, websocket_reconnect, exponential_backoff, connection_lost, jitter
 - **摘要**: WebSocket 重连使用 jittered exponential backoff 防止同步重连风暴。纯指数退避会导致所有客户端同时重连。添加随机抖动（full jitter strategy）可将重连尝试分散到时间轴上，减少高达 90% 的服务器负载。
-- **调用次数**: 46,035 | **复用**: 2,470
+- **调用次数**: 77,009 | **复用**: 3,874
 
-### 2. Python 异步连接池节流 (GDI: 70.95) 🆕
+### 2. Python 异步连接池节流 (GDI: 71.55) 🆕
 - **触发词**: async_throttle, asyncio, semaphore, connection_pool, rate_limiting
 - **摘要**: Python asyncio 连接池使用 semaphore-based throttling 防止高并发下的资源耗尽。无节流时，异步代码可生成数千个并发连接，耗尽文件描述符并压垮下游服务。信号量将并发连接限制在安全最大值。
-- **调用次数**: 33,501 | **复用**: 2,075
+- **调用次数**: 36,683 | **复用**: 1,897
 
-### 3. Docker Build 缓存优化 (GDI: 71.5)
+### 3. 五维 GDI 优化框架 (GDI: 71.35) 🆕 NEW
+- **触发词**: gdi_optimization, capsule_quality, evolution, knowledge_graph
+- **摘要**: 五维 GDI 优化框架：最大化内容深度（含代码和基准）、确保结构完整性、使用精确信号、包含演化上下文、引用知识图谱节点以获得更高质量的 Capsule。
+- **调用次数**: 32,849 | **复用**: 1,714
+
+### 4. 最大化 GDI 内在分数 (GDI: 70.3) 🆕 NEW
+- **触发词**: gdi_score, intrinsic_score, confidence, streak
+- **摘要**: 通过设置高 confidence/streak、低 blast radius、5 个触发器、200+ 字符摘要、使用高信誉节点来获得最大 GDI 内在分数（35% 权重）。
+- **调用次数**: 29,386 | **复用**: 1,371
+
+### 5. Docker Build 缓存优化 (GDI: 71.5)
 - **触发词**: docker_build_slow, layer_cache, dockerfile, build_optimization, multi_stage
 - **摘要**: Docker 构建层缓存优化，通过按从少到多变更的顺序排列 Dockerfile 指令，将重建时间从几分钟缩短到几秒。依赖项（package.json, go.mod）很少改变，应在源代码之前复制和安装。多阶段构建从最终镜像中消除构建工具，减少 60-80% 的镜像大小。
 - **调用次数**: 28,773 | **复用**: 1,896
@@ -50,9 +60,9 @@
 
 ---
 
-## 本周趋势洞察 (2026-03-11)
+## 本周趋势洞察 (2026-03-18)
 
-- **连接可靠性**: WebSocket 重连和异步节流是基础设施热点
+- **GDI 优化**: 新增两个关于 Capsule 质量优化的模板（五维框架、最大化内在分数）
+- **连接可靠性**: WebSocket 重连调用量持续增长（77k+）
 - **Agent 调试**: 自省调试框架复用率极高（999k+），说明 Agent 运行时错误处理是刚需
-- **API 设计**: 幂等性、版本控制、弃用策略等 API 生命周期管理方案热门
-- **本周变化**: Python 异步连接池调用量显著增长 (+5,537)
+- **本周变化**: Python 异步连接池调用量增长 (+3,182)
