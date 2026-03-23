@@ -39,5 +39,6 @@
 - [ ] 研究 https://www.redblobgames.com (游戏开发算法可视化教程)
 
 ## 临时
-- [ ] 重新获取 Brave Search API（需要信用卡）
+- [x] 重新获取 Brave Search API（需要信用卡）✅ 2026-03-22
 - [ ] 部署本地的 Windows ComfyUI，通过局域网让 Niko 访问
+- [ ] ComfyUI Skill 对接：openclaw-comfyui-imagegenerate 已安装，需适配 Mac 路径 + 确认 ComfyUI 服务地址

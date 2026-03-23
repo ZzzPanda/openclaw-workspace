@@ -90,6 +90,10 @@
 
 ---
 
+### 2026-03-23 新增
+- **Slay The Robot WeaponData Bug 修复**: 修复 Global.gd 中 WeaponData 自动加载问题，现在可以通过 Global.get_weapon_data() 正常访问武器数据
+- **Android 构建成功**: 成功构建 30MB Android Debug APK (android_debug_20260323_0406.apk)，已同步到 Google Drive
+
 ### 2026-03-19 新增
 - **Slay The Wheelman 击退系统**: 新增 ActionKnockback.gd（击退动作）和 ActionRecoil.gd（后坐力动作），更新 Signals.gd 添加相关信号
 - **Android 构建成功**: 打包 android_debug_20260319_0400.apk，位置战斗系统计划中（待完成：WeaponData.gd, 扩展 CardData/EnemyData, ValidatorAttackRange.gd）
