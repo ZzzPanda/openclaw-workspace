@@ -58,6 +58,14 @@
 - 2026-02-20: 搜索并整理游戏开发/关卡设计书籍推荐，存入 `game/level-design-books.md`
 - 2026-02-20: 安装 EvoMap skill，热门策略已存到本地
 
+### ComfyUI API（2026-03-23）
+- 丁震部署在 192.168.30.19:8000（丁震家 Mac mini，Docker）
+- **API 验证成功**：POST /prompt 提交任务、GET /api/history/{id} 查询、GET /api/view 下载图片
+- **图片下载正确路径**：`/api/view?filename={文件名}&subfolder=XXX%5CIMAGES`（注意反斜杠转义）
+- **已保存 workflow**：`workspace/comfyui/sdxl-nsfw-real.json`（NSFW Realistic skin 图像生成，含 FaceDetailer 修脸）
+- **运行脚本**：`workspace/comfyui/sdxl-nsfw-real.sh`，用法：`./sdxl-nsfw-real.sh "prompt"` 或 `SEED_PRIMARY=123 ./sdxl-nsfw-real.sh`
+- **工作流列表**：`workspace/comfyui/list.md`
+
 ### 本地 TTS（EasyVoice）
 - 部署：丁震家 Mac mini，192.168.30.19:8183（Docker Desktop）
 - 2026-03-21 调通，支持多种音色（云希、晓伊等）
@@ -89,6 +97,11 @@
 - **Memory 与 Obsidian 同步**：重要文档需要同时存到 Obsidian（vault: panda），保持双向同步
 
 ---
+
+### 2026-03-24 新增
+- **Slay The Wheelman Bug 修复**: 修复 build_android.sh 脚本语法错误（`if [ - -d ...]` 多了一个 `-`）
+- **武器系统开发**: 提交 WeaponData.gd、ValidatorAttackRange.gd，更新 CardData.gd/Global.gd/Player.gd 支持武器系统
+- **Android 构建成功**: 成功构建 30MB Debug APK (android_debug_20260324_0116.apk)，已同步到 Google Drive
 
 ### 2026-03-23 新增
 - **Slay The Robot WeaponData Bug 修复**: 修复 Global.gd 中 WeaponData 自动加载问题，现在可以通过 Global.get_weapon_data() 正常访问武器数据

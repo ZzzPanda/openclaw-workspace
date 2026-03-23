@@ -168,4 +168,25 @@ curl -X POST http://192.168.30.19:8183/api/v1/tts/generate \
 
 ---
 
+### 📷 飞书发图片（正确流程）
+
+**优先使用脚本：**
+```bash
+./scripts/send_image.sh <本地图片路径> [收件人open_id/chat_id]
+```
+
+脚本会自动：
+1. 复制图片到 `~/.openclaw/media/outbound/`
+2. 返回规范化的 filePath
+
+然后用 `message 工具` + `filePath` 发送。
+
+**Fallback（之前的方式）：** 直接复制图片到 `~/.openclaw/media/outbound/`，然后用 message 工具的 `filePath` 参数发送。
+
+**规则：**
+- 所有图片都必须先存到 `~/.openclaw/media/outbound/`，不要直接用 `/tmp` 或绝对路径
+- 发送用 `message 工具 filePath=路径`，不要用 `media` 参数
+
+---
+
 Add whatever helps you do your job. This is your cheat sheet.

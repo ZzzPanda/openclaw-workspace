@@ -1,0 +1,366 @@
+{
+  "210": {
+    "inputs": {
+      "ckpt_name": "cyberillustrious_v50.safetensors"
+    },
+    "class_type": "CheckpointLoaderSimple",
+    "_meta": {
+      "title": "Checkpoint加载器（简易）"
+    }
+  },
+  "211": {
+    "inputs": {
+      "width": 1024,
+      "aspect_ratio": "3:2",
+      "direction": "Vertical",
+      "info": "Example widths: 512, 768, 1024, 1280, 1920"
+    },
+    "class_type": "AspectRatioImageSize",
+    "_meta": {
+      "title": "🧩 Aspect Ratio Image Size"
+    }
+  },
+  "214": {
+    "inputs": {
+      "text": "score_9, score_8_up, score_7_up, BREAK, woman, blonde hair, hot, top view, head looks back, chest down, ass up, all fours, male pov, male hands, spreading pussy, ass focus, skin pores,on the floor, in front of big glass ceiling to floor window, night city, sun tan, sweat, neon light, lens flare, highly detailed, detailed skin, depth of field, film grain, sexy, interior, depth of field, film grain",
+      "clip": [
+        "245",
+        1
+      ]
+    },
+    "class_type": "CLIPTextEncode",
+    "_meta": {
+      "title": "POSITIVE"
+    }
+  },
+  "215": {
+    "inputs": {
+      "text": "score_6, score_5, score_4, tan line, muscular, censored, furry, child, kid, teen, chibi, watermark, text, verybadimagenegative_v1.3, boring composition, boring perspective, simple background, source_pony, bad_hands, bad_feet, deformed, malformed, missing_limbs, extra_limbs, missing_digits, missing_fingers, bad_fingers, simple background, white background, realistic, 2d, birthmarks, spots, moles, 2girls, multiple girls",
+      "clip": [
+        "245",
+        1
+      ]
+    },
+    "class_type": "CLIPTextEncode",
+    "_meta": {
+      "title": "NEGATIVE"
+    }
+  },
+  "216": {
+    "inputs": {
+      "seed": 197,
+      "steps": 35,
+      "cfg": 6.0,
+      "sampler_name": "dpmpp_2m",
+      "scheduler": "karras",
+      "denoise": 1.0,
+      "model": [
+        "245",
+        0
+      ],
+      "positive": [
+        "214",
+        0
+      ],
+      "negative": [
+        "215",
+        0
+      ],
+      "latent_image": [
+        "217",
+        0
+      ]
+    },
+    "class_type": "KSampler",
+    "_meta": {
+      "title": "K采样器"
+    }
+  },
+  "217": {
+    "inputs": {
+      "width": [
+        "211",
+        0
+      ],
+      "height": [
+        "211",
+        1
+      ],
+      "batch_size": 1
+    },
+    "class_type": "EmptyLatentImage",
+    "_meta": {
+      "title": "空Latent图像"
+    }
+  },
+  "219": {
+    "inputs": {
+      "samples": [
+        "216",
+        0
+      ],
+      "vae": [
+        "210",
+        2
+      ]
+    },
+    "class_type": "VAEDecode",
+    "_meta": {
+      "title": "VAE解码"
+    }
+  },
+  "245": {
+    "inputs": {
+      "PowerLoraLoaderHeaderWidget": {
+        "type": "PowerLoraLoaderHeaderWidget"
+      },
+      "lora_1": {
+        "on": true,
+        "lora": "add-detail-xl.safetensors",
+        "strength": 1.3
+      },
+      "lora_2": {
+        "on": true,
+        "lora": "ThiccPonyXL_V1.safetensors",
+        "strength": 0.2818176269531265
+      },
+      "lora_3": {
+        "on": true,
+        "lora": "Civit\\amateur_style_v1_pony.safetensors",
+        "strength": 1.25
+      },
+      "lora_4": {
+        "on": true,
+        "lora": "Civit\\RealSkin_xxXL_v1.safetensors",
+        "strength": 1.6
+      },
+      "lora_5": {
+        "on": true,
+        "lora": "Civit\\Pony Realism Slider.safetensors",
+        "strength": 1.6
+      },
+      "lora_6": {
+        "on": true,
+        "lora": "Sarah SDXL\\Sarah SDXL\\Sarah_Lady2_epoch_9.safetensors",
+        "strength": 1
+      },
+      "➕ Add Lora": "",
+      "model": [
+        "210",
+        0
+      ],
+      "clip": [
+        "246",
+        0
+      ]
+    },
+    "class_type": "Power Lora Loader (rgthree)",
+    "_meta": {
+      "title": "Power Lora Loader (rgthree)"
+    }
+  },
+  "246": {
+    "inputs": {
+      "stop_at_clip_layer": -2,
+      "clip": [
+        "210",
+        1
+      ]
+    },
+    "class_type": "CLIPSetLastLayer",
+    "_meta": {
+      "title": "设置CLIP最后一层"
+    }
+  },
+  "247": {
+    "inputs": {
+      "samples": [
+        "253",
+        0
+      ],
+      "vae": [
+        "210",
+        2
+      ]
+    },
+    "class_type": "VAEDecode",
+    "_meta": {
+      "title": "VAE解码"
+    }
+  },
+  "249": {
+    "inputs": {
+      "model_name": "sam_vit_b_01ec64.pth",
+      "device_mode": "AUTO"
+    },
+    "class_type": "SAMLoader",
+    "_meta": {
+      "title": "SAMLoader (Impact)"
+    }
+  },
+  "250": {
+    "inputs": {
+      "model_name": "bbox/face_yolov8m.pt"
+    },
+    "class_type": "UltralyticsDetectorProvider",
+    "_meta": {
+      "title": "UltralyticsDetectorProvider"
+    }
+  },
+  "251": {
+    "inputs": {
+      "filename_prefix": "XXX/IMAGES/0",
+      "images": [
+        "254",
+        0
+      ]
+    },
+    "class_type": "SaveImage",
+    "_meta": {
+      "title": "FACEFIXED"
+    }
+  },
+  "253": {
+    "inputs": {
+      "seed": 266,
+      "steps": 20,
+      "cfg": 7.0,
+      "sampler_name": "dpmpp_sde",
+      "scheduler": "karras",
+      "denoise": 0.45000000000000007,
+      "model": [
+        "256",
+        0
+      ],
+      "positive": [
+        "214",
+        0
+      ],
+      "negative": [
+        "215",
+        0
+      ],
+      "latent_image": [
+        "259",
+        0
+      ]
+    },
+    "class_type": "KSampler",
+    "_meta": {
+      "title": "K采样器"
+    }
+  },
+  "254": {
+    "inputs": {
+      "guide_size": 1152.0,
+      "guide_size_for": true,
+      "max_size": 1152.0,
+      "seed": 71,
+      "steps": 31,
+      "cfg": 7.0,
+      "sampler_name": "dpmpp_sde",
+      "scheduler": "karras",
+      "denoise": 0.44000000000000006,
+      "feather": 4,
+      "noise_mask": true,
+      "force_inpaint": false,
+      "bbox_threshold": 0.5,
+      "bbox_dilation": 8,
+      "bbox_crop_factor": 1.5,
+      "sam_detection_hint": "center-1",
+      "sam_dilation": 0,
+      "sam_threshold": 0.93,
+      "sam_bbox_expansion": 0,
+      "sam_mask_hint_threshold": 0.7,
+      "sam_mask_hint_use_negative": "False",
+      "drop_size": 10,
+      "wildcard": "",
+      "cycle": 1,
+      "inpaint_model": false,
+      "noise_mask_feather": 2,
+      "tiled_encode": false,
+      "tiled_decode": false,
+      "image": [
+        "247",
+        0
+      ],
+      "model": [
+        "256",
+        0
+      ],
+      "clip": [
+        "256",
+        1
+      ],
+      "vae": [
+        "256",
+        2
+      ],
+      "positive": [
+        "214",
+        0
+      ],
+      "negative": [
+        "215",
+        0
+      ],
+      "bbox_detector": [
+        "250",
+        0
+      ],
+      "sam_model_opt": [
+        "249",
+        0
+      ]
+    },
+    "class_type": "FaceDetailer",
+    "_meta": {
+      "title": "FaceDetailer (Output)"
+    }
+  },
+  "256": {
+    "inputs": {
+      "ckpt_name": "fucktastic25DCheckpointPony_10.safetensors"
+    },
+    "class_type": "CheckpointLoaderSimple",
+    "_meta": {
+      "title": "Checkpoint加载器（简易）"
+    }
+  },
+  "259": {
+    "inputs": {
+      "pixels": [
+        "260",
+        0
+      ],
+      "vae": [
+        "256",
+        2
+      ]
+    },
+    "class_type": "VAEEncode",
+    "_meta": {
+      "title": "VAE编码"
+    }
+  },
+  "260": {
+    "inputs": {
+      "width": 1500,
+      "height": 1500,
+      "upscale_method": "nearest-exact",
+      "keep_proportion": "resize",
+      "pad_color": "0, 0, 0",
+      "crop_position": "center",
+      "divisible_by": 2,
+      "device": "cpu",
+      "image": [
+        "219",
+        0
+      ]
+    },
+    "class_type": "ImageResizeKJv2",
+    "_meta": {
+      "title": "Resize Image v2"
+    }
+  }
+}
