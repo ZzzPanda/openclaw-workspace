@@ -98,6 +98,10 @@
 
 ---
 
+### 2026-03-25 新增
+- **Slay The Robot 宝箱 consumable 奖励**: 在 Random.gd 添加 `get_location_consumable_rewards()` 函数和 consumable 稀有度权重，在 ActionOpenChest.gd 取消 consumable 奖励注释；宝箱/Miniboss/Boss 现在可以生成 consumable 奖励
+- **Android 构建成功**: 成功构建 31.4MB Debug APK (android_debug_20260325_0110.apk)，项目构建无错误
+
 ### 2026-03-24 新增
 - **Slay The Wheelman Bug 修复**: 修复 build_android.sh 脚本语法错误（`if [ - -d ...]` 多了一个 `-`）
 - **武器系统开发**: 提交 WeaponData.gd、ValidatorAttackRange.gd，更新 CardData.gd/Global.gd/Player.gd 支持武器系统
