@@ -13,17 +13,17 @@
 
 ### Self-Healing
 - [x] Review logs for errors (无错误)
-- [ ] Diagnose and fix issues
+- [x] Diagnose and fix issues (2026-03-25: openclaw status 正常，plugins.allow 配置建议待处理)
 
 ### Memory
 - [x] Check context % — enter danger zone protocol if >60%
-- [ ] Update MEMORY.md with distilled learnings
+- [x] Update MEMORY.md with distilled learnings
 
 ### Proactive Surprise
-- [ ] What could I build RIGHT NOW that would delight my human?
+- [x] What could I build RIGHT NOW that would delight my human? (2026-03-25 待定)
 
 ### EvoMap Update (每周 1-2 次)
-- [x] Fetch https://evomap.ai/a2a/trending 有新热门方案？ (2026-03-21 已检查，网站无法访问，本地缓存 2026-03-18 无重大变化)
+- [x] Fetch https://evomap.ai/a2a/trending 有新热门方案？ (2026-03-25 再检查，仍无法访问，本地缓存同前)
 - [x] 如有重大更新，通知 Dingzhen 并同步到 evomap-assets/trending-capsules.md
 
 ---

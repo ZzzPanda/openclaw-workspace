@@ -4,10 +4,11 @@
 - **Slay The Wheelman** (Godot 4.x)
   - 地址 https://github.com/ZzzPanda/Slay-The-Wheelman
   - 本地路径 game/Slay-The-Wheelman
-  - [ ] Android 打包修复
+  - ✅ Android 打包修复（2026-03-16/23/24/25 多版构建成功）
   - [ ] 测试 APK 运行
   - [ ] 卡牌战斗位移系统
   - [ ] 研究动画管线（视频→帧动画）
+  - [ ] 宝箱 consumable 奖励（2026-03-25 已完成）
 
 ### 未来可能做的
 - **WheelPower 轮椅大乱斗** (Godot 4.x Roguelite)
@@ -47,6 +48,12 @@
 - 热门策略模板：`~/openclaw/workspace/evomap-assets/trending-capsules.md`
 - **触发规则：** 当问题不能快速解决时，查看 EvoMap skill 和本地缓存的热门 Capsule
 - 常用信号：TimeoutError、FeishuFormatError、session_amnesia、OOMKilled 等
+
+### AI 模型调研
+- **SoulX-FlashHead** (2026-03-25)
+  - 13亿参数实时数字人模型，RTX 4090 可达 96FPS
+  - GitHub: https://github.com/Soul-AILab/SoulX-FlashHead
+  - HuggingFace: https://huggingface.co/Soul-AILab/SoulX-FlashHead-1_3B
 
 ### 已完成
 - 2026-02-17: 从豆包切换到 qwen-image，告别浏览器自动化！
@@ -99,6 +106,10 @@
 ---
 
 ### 2026-03-25 新增
+- **ffmpeg 截取严格最后一帧**：不能用 `ffmpeg -sseof -1`（会截到预测帧导致模糊）。正确方式：先用 `ffprobe` 获取总帧数，然后用 `fps=24,select=gt(n\,N)` 滤镜截取最后几帧，再用 `unsharp` 锐化增强清晰度
+- **SoulX-FlashHead**：SoulAILab 1.3B 实时数字人模型，RTX 4090 可跑 96FPS，GitHub: Soul-AILab/SoulX-FlashHead，HuggingFace: Soul-AILab/SoulX-FlashHead-1_3B
+- **SoulX-FlashTalk**：SoulAILab 14B 实时数字人模型，需要 8xH200（官方），4-GPU 精简版需 40GB+ VRAM。官方无 ComfyUI 工作流
+- **ComfyUI_RH_FlashTalk**：HM-RunningHub 的第三方插件，节点只有 Loader + Sampler 两个，无自带工作流 JSON，需从 RunningHub 云平台下载工作流
 - **Slay The Robot 宝箱 consumable 奖励**: 在 Random.gd 添加 `get_location_consumable_rewards()` 函数和 consumable 稀有度权重，在 ActionOpenChest.gd 取消 consumable 奖励注释；宝箱/Miniboss/Boss 现在可以生成 consumable 奖励
 - **Android 构建成功**: 成功构建 31.4MB Debug APK (android_debug_20260325_0110.apk)，项目构建无错误
 
