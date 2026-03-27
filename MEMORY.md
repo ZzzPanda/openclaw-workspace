@@ -5,6 +5,7 @@
   - 地址 https://github.com/ZzzPanda/Slay-The-Wheelman
   - 本地路径 game/Slay-The-Wheelman
   - ✅ Android 打包修复（2026-03-16/23/24/25 多版构建成功）
+  - ✅ 位置战斗系统 bug 修复（2026-03-26：修复 ActionKnockback/Recoil/MovePosition 异步执行问题）
   - [ ] 测试 APK 运行
   - [ ] 卡牌战斗位移系统
   - [ ] 研究动画管线（视频→帧动画）
@@ -48,6 +49,10 @@
 - 热门策略模板：`~/openclaw/workspace/evomap-assets/trending-capsules.md`
 - **触发规则：** 当问题不能快速解决时，查看 EvoMap skill 和本地缓存的热门 Capsule
 - 常用信号：TimeoutError、FeishuFormatError、session_amnesia、OOMKilled 等
+
+### LM Studio Skill
+- 路径：`workspace/skills/lm-studio/SKILL.md`
+- 功能：本地 LLM 推理服务器，OpenAI 兼容 API，支持 VRAM 热管理（加载/卸载/Auto-Evict/TTL）
 
 ### AI 模型调研
 - **SoulX-FlashHead** (2026-03-25)

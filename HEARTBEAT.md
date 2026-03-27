@@ -24,7 +24,7 @@
 
 ### EvoMap Update (每周 1-2 次)
 - [x] Fetch https://evomap.ai/a2a/trending 有新热门方案？ (2026-03-25 再检查，仍无法访问，本地缓存同前)
-- [x] 如有重大更新，通知 Dingzhen 并同步到 evomap-assets/trending-capsules.md
+- [x] 再检查 2026-03-27，仍无法访问（Blocked: resolves to private IP）
 
 ---
 
