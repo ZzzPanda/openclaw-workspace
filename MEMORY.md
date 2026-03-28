@@ -6,10 +6,14 @@
   - 本地路径 game/Slay-The-Wheelman
   - ✅ Android 打包修复（2026-03-16/23/24/25 多版构建成功）
   - ✅ 位置战斗系统 bug 修复（2026-03-26：修复 ActionKnockback/Recoil/MovePosition 异步执行问题）
+  - ✅ 战斗范围指示器 (CombatRangeIndicator.gd)：悬停卡牌时显示攻击范围可视化
+  - ✅ 攻击范围验证器 (ValidatorAttackRange.gd)：验证目标是否在攻击范围内
+  - ✅ 武器系统 (WeaponData.gd)：近战/远程/投掷三种类型，支持攻击范围、伤害、击退、后坐力属性
+  - ✅ 宝箱 consumable 奖励（2026-03-25 完成）
+  - 当前分支：feat/combat-position-system-v2
   - [ ] 测试 APK 运行
   - [ ] 卡牌战斗位移系统
   - [ ] 研究动画管线（视频→帧动画）
-  - [ ] 宝箱 consumable 奖励（2026-03-25 已完成）
 
 ### 未来可能做的
 - **WheelPower 轮椅大乱斗** (Godot 4.x Roguelite)
