@@ -114,6 +114,19 @@
 
 ---
 
+### 2026-04-01 新增
+- **Slay The Robot 位置战斗系统最终修复**（2026-03-31 凌晨自由任务）
+  - CombatRangeIndicator.gd：修复显示位置，改用玩家节点直接获取 position_x
+  - ActionRecoil.gd：修复 attack_direction=0 时后坐力为 0 的 bug（默认改为 1.0）
+  - NewRunMenu.gd：多个初始神器时显示 [+N 神器] 提示
+  - 代码审查确认系统稳定无新 bug
+  - 最新 APK：builds/android_debug_20260325_0110.apk
+- **视频处理功能**：ffmpeg 将视频转换为16fps，用户通过飞书直接发送视频文件，处理后发回（抖音链接无法直接下载，需用户手动保存发送）
+- **OpenClaw Agent 架构**：当前只有1个 main agent，subagent 之间 memory 不共享，workspace 隔离
+
+### 2026-03-31 新增
+- **小红书视频下载**：泳衣/AI生成类视频无法从 xhslink.com 直接抓取，已告知用户手动保存视频文件发送
+
 ### 2026-03-25 新增
 - **ffmpeg 截取严格最后一帧**：不能用 `ffmpeg -sseof -1`（会截到预测帧导致模糊）。正确方式：先用 `ffprobe` 获取总帧数，然后用 `fps=24,select=gt(n\,N)` 滤镜截取最后几帧，再用 `unsharp` 锐化增强清晰度
 - **SoulX-FlashHead**：SoulAILab 1.3B 实时数字人模型，RTX 4090 可跑 96FPS，GitHub: Soul-AILab/SoulX-FlashHead，HuggingFace: Soul-AILab/SoulX-FlashHead-1_3B
