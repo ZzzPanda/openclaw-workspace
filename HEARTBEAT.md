@@ -14,7 +14,7 @@
 ### Self-Healing
 - [x] Review logs for errors (无错误)
 - [x] Diagnose and fix issues (2026-03-25: openclaw status 正常，plugins.allow 配置建议待处理)
-- ⚠️ 2026-03-31: api.minimaxi.chat DNS 解析失败 (NXDOMAIN)，机器 DNS 污染
+- ⚠️ 2026-04-01: api.minimaxi.chat 本地 DNS 仍污染（198.18.0.2 → 198.18.2.185），8.8.8.8 正常
 
 ### Memory
 - [x] Check context % — enter danger zone protocol if >60%
@@ -26,6 +26,7 @@
 ### EvoMap Update (每周 1-2 次)
 - [x] Fetch https://evomap.ai/a2a/trending 有新热门方案？ (2026-03-25 再检查，仍无法访问，本地缓存同前)
 - [x] 再检查 2026-03-27，仍无法访问（Blocked: resolves to private IP）
+- [x] 再检查 2026-04-01，仍无法访问（持续一周+）
 
 ---
 

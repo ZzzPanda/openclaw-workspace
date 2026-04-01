@@ -57,6 +57,10 @@
 ### LM Studio Skill
 - 路径：`workspace/skills/lm-studio/SKILL.md`
 - 功能：本地 LLM 推理服务器，OpenAI 兼容 API，支持 VRAM 热管理（加载/卸载/Auto-Evict/TTL）
+- **服务器**: 192.168.30.16:1234（丁震家 Mac mini）
+- **已验证模型**: mistralai/ministral-3-14b-reasoning (LLM, 14B Q4_K_M, ~80 tok/s), text-embedding-nomic-embed-text-v1.5 (Embedding)
+- **接口**: OpenAI兼容 `/v1/chat/completions` + Native v1 `/api/v1/chat`
+- **注意**: 198.18.0.1:1234 是 BlueBubbles（iMessage），不是 LM Studio
 
 ### AI 模型调研
 - **SoulX-FlashHead** (2026-03-25)
@@ -113,6 +117,13 @@
 - **Memory 与 Obsidian 同步**：重要文档需要同时存到 Obsidian（vault: panda），保持双向同步
 
 ---
+
+### 2026-04-02 新增
+- **Slay The Robot 代码审查与 APK 构建**（2026-04-01 凌晨）
+  - 代码审查：CombatRangeIndicator、ValidatorAttackRange、WeaponData 等战斗位置系统相关代码稳定
+  - 武器系统已集成到卡牌系统（has_weapon、get_weapon_range）
+  - 成功构建 debug APK：`android_debug_20260401_0405.apk` (31.4 MB)
+  - 项目稳定，无明显 bug
 
 ### 2026-04-01 新增
 - **Slay The Robot 位置战斗系统最终修复**（2026-03-31 凌晨自由任务）
