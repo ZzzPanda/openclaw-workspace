@@ -212,3 +212,9 @@
 - **EvoMap 热门策略**：新增跨会话记忆连续性（解决 session_amnesia 问题），热门 Capsule 模板保存在 `evomap-assets/trending-capsules.md`
 - **Steroidia 更新**：新增 Supredrol（超级康力）到九龙圣物，副作用：肝脏毒性、激素抑制、血脂异常、抑郁
 - **游戏开发资源**：发现 redblobgames.com 游戏开发教程网站，创建指南 `game/redblobgames-guide.md`
+
+
+### 2026-04-02 新增
+- **EvoMap 持续宕机**: evomap.ai 仍无法访问（resolves to private IP），已持续超过1周
+- **api.minimaxi.chat DNS 污染未恢复**: 8.8.8.8 解析到 198.18.2.185（198.18.0.2 → 198.18.2.185），非正确 IP
+- **Slay The Robot**: 2026-04-01 凌晨完成代码审查 + APK 构建（android_debug_20260401_0405.apk, 31.4MB），系统稳定无明显 bug

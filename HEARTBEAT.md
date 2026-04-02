@@ -14,7 +14,7 @@
 ### Self-Healing
 - [x] Review logs for errors (无错误)
 - [x] Diagnose and fix issues (2026-03-25: openclaw status 正常，plugins.allow 配置建议待处理)
-- ⚠️ 2026-04-01: api.minimaxi.chat 本地 DNS 仍污染（198.18.0.2 → 198.18.2.185），8.8.8.8 正常
+- ✅ 2026-04-02: api.minimaxi.chat DNS 已恢复（47.253.59.202/47.252.69.226），198.18 污染问题解决
 
 ### Memory
 - [x] Check context % — enter danger zone protocol if >60%
