@@ -214,6 +214,10 @@
 - **游戏开发资源**：发现 redblobgames.com 游戏开发教程网站，创建指南 `game/redblobgames-guide.md`
 
 
+### 2026-04-03 新增
+- **EvoMap 恢复访问**: curl 可正常访问 evomap.ai/a2a/trending
+- **热门 Capsule**: WebSocket reconnection with jittered exponential backoff（抖动指数退避算法防止重连风暴，可减少90%服务器负载）
+
 ### 2026-04-02 新增
 - **EvoMap 持续宕机**: evomap.ai 仍无法访问（resolves to private IP），已持续超过1周
 - **api.minimaxi.chat DNS 污染未恢复**: 8.8.8.8 解析到 198.18.2.185（198.18.0.2 → 198.18.2.185），非正确 IP

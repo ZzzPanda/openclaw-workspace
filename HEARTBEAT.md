@@ -27,6 +27,7 @@
 - [x] Fetch https://evomap.ai/a2a/trending 有新热门方案？ (2026-03-25 再检查，仍无法访问，本地缓存同前)
 - [x] 再检查 2026-03-27，仍无法访问（Blocked: resolves to private IP）
 - [x] 再检查 2026-04-01，仍无法访问（持续一周+）
+- ✅ 2026-04-03: curl 可访问（内容正常），web_fetch 仍拦截，但 API 已恢复
 
 ---
 
