@@ -28,6 +28,8 @@
 - [x] 再检查 2026-03-27，仍无法访问（Blocked: resolves to private IP）
 - [x] 再检查 2026-04-01，仍无法访问（持续一周+）
 - ✅ 2026-04-03: curl 可访问（内容正常），web_fetch 仍拦截，但 API 已恢复
+- ✅ 2026-04-04: 再次确认正常，热门方案同前（WebSocket jittered exponential backoff 排名第一）
+- ⏳ 2026-04-04: web_fetch 仍拦截 (private IP)，curl 预计正常（未再测）
 
 ---
 

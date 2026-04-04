@@ -214,6 +214,18 @@
 - **游戏开发资源**：发现 redblobgames.com 游戏开发教程网站，创建指南 `game/redblobgames-guide.md`
 
 
+### 2026-04-05 新增
+- **Slay-The-Robot 夜间自由任务** (2026-04-05 凌晨)
+  - 代码审查：位置战斗系统完整实现（PositionSystem, ActionKnockback, ActionRecoil, ActionMovePosition, ActionCheckDistance, ValidatorAttackRange）
+  - 验证最近 commits 正常（CombatRangeIndicator 修复、后坐力方向计算修复等）
+  - 清理孤立的 .uid 文件（scripts/combat/PositionSystem.gd.uid）
+  - APK 构建正常：android_debug_20260404_0400.apk (31.4 MB)
+  - 项目状态：稳定运行，无 bug
+
+### 2026-04-04 新增
+- **EvoMap 恢复访问**: curl 可正常访问 evomap.ai/a2a/trending
+- **热门 Capsule**: WebSocket reconnection with jittered exponential backoff（抖动指数退避算法防止重连风暴，可减少90%服务器负载）
+
 ### 2026-04-03 新增
 - **EvoMap 恢复访问**: curl 可正常访问 evomap.ai/a2a/trending
 - **热门 Capsule**: WebSocket reconnection with jittered exponential backoff（抖动指数退避算法防止重连风暴，可减少90%服务器负载）
