@@ -222,6 +222,15 @@
   - APK 构建正常：android_debug_20260404_0400.apk (31.4 MB)
   - 项目状态：稳定运行，无 bug
 
+### 2026-04-05 新增
+- **local-lm 触发方案最终确定** (2026-04-05 晚)
+  - 之前方案太复杂（cron 文件监听、subagent 写文件、message 工具发飞书）
+  - 最终方案：`local-lm <提示词>` → main agent exec Python 脚本 → stdout 原样当回复发出
+  - 绕过模型管道：main agent 直接 exec → 读 stdout → 回复（不再经过模型处理）
+  - 触发关键字：`local-lm`（不用 `!local-lm`，因为 `!` 在 web UI 被当 bash）
+  - System prompt 更新防污染：`"You are a helpful assistant. Keep responses concise.\nDo not roleplay..."`
+  - Model 被污染过一次（"小娇妻"角色），清理了 sessions 和 system_prompt.txt 后恢复
+
 ### 2026-04-04 新增
 - **EvoMap 恢复访问**: curl 可正常访问 evomap.ai/a2a/trending
 - **热门 Capsule**: WebSocket reconnection with jittered exponential backoff（抖动指数退避算法防止重连风暴，可减少90%服务器负载）
