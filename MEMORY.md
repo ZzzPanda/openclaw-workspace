@@ -223,6 +223,24 @@
   - 项目状态：稳定运行，无 bug
 
 ### 2026-04-05 新增
+- **See-through ComfyUI 插件** (2026-04-06)
+  - ComfyUI 在 192.168.30.16:8000（Windows RTX 5080）
+  - 已安装 jtyd3hr88/ComfyUI-See-through v0.3.0
+  - 用途：SIGGRAPH 2026 论文，把动漫插画分解成 2.5D 分层 PSD，支持 Live2D 工作流
+  - **需用户手动 pip install 依赖**：diffusers, accelerate, opencv-python, scikit-learn，然后重启 ComfyUI
+  - VRAM 注意：RTX 5080 默认 1280分辨率需要 ~16.7GB，会爆。需开启 group_offload=true 或降到 resolution=1024
+  - Workflow JSON 已保存：~/.openclaw/workspace/comfyui/seethrough-basic.json
+
+- **canirun skill** (2026-04-06 新建)
+  - 检测本地 GPU/CPU 能否跑 AI 模型
+  - URL: https://www.canirun.ai/
+
+- **Slay The Robot 夜间审查** (2026-04-07 凌晨)
+  - 代码审查：PositionSystem、ValidatorAttackRange、BaseCombatant position_x 系统完整
+  - 构建正常：android_debug_20260404_0400.apk (31.4 MB)
+  - 项目状态稳定，无需修复的 bug
+
+### 2026-04-05 新增
 - **local-lm 触发方案最终确定** (2026-04-05 晚)
   - 之前方案太复杂（cron 文件监听、subagent 写文件、message 工具发飞书）
   - 最终方案：`local-lm <提示词>` → main agent exec Python 脚本 → stdout 原样当回复发出
