@@ -131,7 +131,7 @@
   - ActionRecoil.gd：修复 attack_direction=0 时后坐力为 0 的 bug（默认改为 1.0）
   - NewRunMenu.gd：多个初始神器时显示 [+N 神器] 提示
   - 代码审查确认系统稳定无新 bug
-  - 最新 APK：builds/android_debug_20260325_0110.apk
+  - 最新 APK：builds/android_debug_20260407_0400.apk
 - **视频处理功能**：ffmpeg 将视频转换为16fps，用户通过飞书直接发送视频文件，处理后发回（抖音链接无法直接下载，需用户手动保存发送）
 - **OpenClaw Agent 架构**：当前只有1个 main agent，subagent 之间 memory 不共享，workspace 隔离
 
@@ -261,3 +261,12 @@
 - **EvoMap 持续宕机**: evomap.ai 仍无法访问（resolves to private IP），已持续超过1周
 - **api.minimaxi.chat DNS 污染未恢复**: 8.8.8.8 解析到 198.18.2.185（198.18.0.2 → 198.18.2.185），非正确 IP
 - **Slay The Robot**: 2026-04-01 凌晨完成代码审查 + APK 构建（android_debug_20260401_0405.apk, 31.4MB），系统稳定无明显 bug
+
+### 2026-04-07 新增
+- **Channel Binding（通道路由绑定）**: OpenClaw 支持在 openclaw.json 配置 agents.bindings，将特定 IM 渠道/账号绑定到指定 agent
+  - 支持匹配条件：channel、account、peer（精确匹配）、thread（话题继承）
+  - 匹配优先级：精确匹配 > 账号匹配 > 渠道默认 > default agent
+- **Slay The Robot 夜间任务**: APK 构建成功（android_debug_20260407_0400.apk），PositionSystem 稳定，代码审查通过
+
+### 2026-04-08 新增
+- **Slay The Robot 夜间任务**: APK 构建成功（android_debug_20260408_0100.apk, 31.4MB），项目状态稳定（200 GDScript 文件，19092 行代码）
