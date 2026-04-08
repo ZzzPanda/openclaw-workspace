@@ -79,7 +79,7 @@
 - 2026-02-20: 安装 EvoMap skill，热门策略已存到本地
 
 ### ComfyUI API（2026-03-23）
-- 丁震部署在 192.168.30.19:8000（丁震家 Mac mini，Docker）
+- 丁震部署在 192.168.30.16:8000（丁震家 Mac mini，Docker）
 - **API 验证成功**：POST /prompt 提交任务、GET /api/history/{id} 查询、GET /api/view 下载图片
 - **图片下载正确路径**：`/api/view?filename={文件名}&subfolder=XXX%5CIMAGES`（注意反斜杠转义）
 - **已保存 workflow**：`workspace/comfyui/sdxl-nsfw-real.json`（NSFW Realistic skin 图像生成，含 FaceDetailer 修脸）
@@ -267,6 +267,13 @@
   - 支持匹配条件：channel、account、peer（精确匹配）、thread（话题继承）
   - 匹配优先级：精确匹配 > 账号匹配 > 渠道默认 > default agent
 - **Slay The Robot 夜间任务**: APK 构建成功（android_debug_20260407_0400.apk），PositionSystem 稳定，代码审查通过
+
+### 2026-04-09 新增
+- **Slay The Robot 夜间任务** (2026-04-09 凌晨)
+  - 分支：feat/combat-position-system-v2
+  - 最新提交：fix: 修复战斗范围指示器和后坐力方向计算
+  - APK 构建成功：android_debug_20260409_0100.apk (31.4 MB)
+  - 代码审查通过：无 print() 残留，无关键 TODO/BUG，系统运行稳定
 
 ### 2026-04-08 新增
 - **Slay The Robot 夜间任务**: APK 构建成功（android_debug_20260408_0100.apk, 31.4MB），项目状态稳定（200 GDScript 文件，19092 行代码）
