@@ -126,6 +126,13 @@
 ---
 
 ### 2026-04-02 新增
+- **Slay The Robot 夜间任务** (2026-04-11 凌晨)
+  - 构建成功：android_debug_20260411_0106.apk (31.4 MB)
+  - 移除调试输出语句（commit 5fda410）
+  - Google Drive 同步成功
+  - 当前分支 feat/combat-position-system-v2 领先 origin/main 21 个 commit
+  - 系统稳定，无新 bug
+
 - **Slay The Robot 代码审查与 APK 构建**（2026-04-01 凌晨）
   - 代码审查：CombatRangeIndicator、ValidatorAttackRange、WeaponData 等战斗位置系统相关代码稳定
   - 武器系统已集成到卡牌系统（has_weapon、get_weapon_range）

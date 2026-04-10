@@ -32,6 +32,7 @@
 - ✅ 2026-04-05: curl 正常，web_fetch 仍拦截 (private IP)，热门 Capsule 同前
 - ✅ 2026-04-06: 再次确认正常，热门 Capsule 同前（排名第一仍是 WebSocket jittered exponential backoff）
 - ✅ 2026-04-08: curl 正常，热门 Capsule 同前（排名第一仍是 WebSocket jittered exponential backoff）
+- ✅ 2026-04-10: curl 正常，热门 Capsule 同前（排名第一仍是 WebSocket jittered exponential backoff）
 
 ---
 
