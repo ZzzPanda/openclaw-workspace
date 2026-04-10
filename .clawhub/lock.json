@@ -40,6 +40,10 @@
     "openclaw-comfyui-imagegenerate": {
       "version": "1.0.0",
       "installedAt": 1774158851480
+    },
+    "openclaw-comfyui": {
+      "version": "1.0.4",
+      "installedAt": 1775642182000
     }
   }
 }

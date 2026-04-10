@@ -12,7 +12,7 @@
 # Requires: curl, python3
 # Output:   ~/.openclaw/media/outbound/comfy_video.mp4
 
-COMFY_HOST="192.168.30.19"
+COMFY_HOST="192.168.30.16"
 COMFY_PORT="8000"
 COMFY_URL="http://${COMFY_HOST}:${COMFY_PORT}"
 OUTBOUND_DIR="$HOME/.openclaw/media/outbound"

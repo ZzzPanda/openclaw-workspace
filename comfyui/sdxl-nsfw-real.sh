@@ -4,13 +4,13 @@
 #   ./comfy_run.sh "your positive prompt" - run with custom prompt
 #   ./comfy_run.sh "pos" "neg"           - custom positive + negative
 #
-# The script sends a workflow to ComfyUI at 192.168.30.19:8000,
+# The script sends a workflow to ComfyUI at 192.168.30.16:8000,
 # waits for completion, downloads the output image, and copies it to:
 #   ~/.openclaw/media/outbound/comfy_output.png
 #
 # Requires: curl, python3
 
-COMFY_HOST="192.168.30.19"
+COMFY_HOST="192.168.30.16"
 COMFY_PORT="8000"
 COMFY_URL="http://${COMFY_HOST}:${COMFY_PORT}"
 

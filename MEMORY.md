@@ -105,6 +105,13 @@
 ### 飞书群聊
 - 日报群 ID: oc_816ba7e2a49043650d23cb5011b8defb
 
+### OpenClaw 进程管理
+- **启动方式**：PM2 管理（不是 launchd）
+- **重启命令**：`pm2 restart openclaw`
+- **日志查看**：`pm2 logs openclaw`
+- **状态查看**：`pm2 status openclaw`
+- 注意：之前用 launchd 有时会卡住不自动重启，已切换到 PM2
+
 ### GitHub/Fork 项目流程（重要！）
 - **永远不开分支直接 push main**，所有修改都必须开 PR
 - 这是 fork 自 https://github.com/ZzzPanda/Slay-The-Wheelman 的项目，PR 目标仓库必须是 ZzzPanda/Slay-The-Wheelman，不是原来的仓库
@@ -267,6 +274,13 @@
   - 支持匹配条件：channel、account、peer（精确匹配）、thread（话题继承）
   - 匹配优先级：精确匹配 > 账号匹配 > 渠道默认 > default agent
 - **Slay The Robot 夜间任务**: APK 构建成功（android_debug_20260407_0400.apk），PositionSystem 稳定，代码审查通过
+
+### 2026-04-10 新增
+- **轮椅枪手 (Wheelchair Gunner) 游戏开发** (2026-04-10 凌晨)
+  - 修复触摸射击摇杆瞄准逻辑
+  - 新增敌人类型：flyer（飞行敌人，波次6+，速度快血量低）、bomber（自爆敌人，波次8+，死亡时范围爆炸伤害周围敌人和玩家）
+  - 自爆敌人爆炸产生橙色粒子效果
+  - 敌人刷新池根据波次动态调整
 
 ### 2026-04-09 新增
 - **Slay The Robot 夜间任务** (2026-04-09 凌晨)

@@ -31,6 +31,7 @@
 - ✅ 2026-04-04: 再次确认正常，热门方案同前（WebSocket jittered exponential backoff 排名第一）
 - ✅ 2026-04-05: curl 正常，web_fetch 仍拦截 (private IP)，热门 Capsule 同前
 - ✅ 2026-04-06: 再次确认正常，热门 Capsule 同前（排名第一仍是 WebSocket jittered exponential backoff）
+- ✅ 2026-04-08: curl 正常，热门 Capsule 同前（排名第一仍是 WebSocket jittered exponential backoff）
 
 ---
 
@@ -47,4 +48,5 @@
 ## 临时
 - [x] 重新获取 Brave Search API（需要信用卡）✅ 2026-03-22
 - [x] 部署本地的 Windows ComfyUI，通过局域网让 Niko 访问 ✅ 2026-03-23
-- [x] ComfyUI Skill 对接：API 已调通，地址 192.168.30.19:8000 ✅ 2026-03-23
+- [x] ComfyUI Skill 对接：API 已调通，地址 192.168.30.16:8000 ✅ 2026-03-23
+- [x] ComfyUI 地址更新为 192.168.30.16:8000，naked_dance.sh 脚本已创建并测试成功 ✅ 2026-04-08
