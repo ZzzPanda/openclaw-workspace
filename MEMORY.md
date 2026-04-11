@@ -9,6 +9,7 @@
   - ✅ 战斗范围指示器 (CombatRangeIndicator.gd)：悬停卡牌时显示攻击范围可视化
   - ✅ 攻击范围验证器 (ValidatorAttackRange.gd)：验证目标是否在攻击范围内
   - ✅ 武器系统 (WeaponData.gd)：近战/远程/投掷三种类型，支持攻击范围、伤害、击退、后坐力属性
+  - ✅ PositionSystem 位置战斗系统（2026-04-12）：统一管理距离计算、范围检测、武器射程、击退/后坐力
   - ✅ 宝箱 consumable 奖励（2026-03-25 完成）
   - 当前分支：feat/combat-position-system-v2
   - [ ] 测试 APK 运行
@@ -126,12 +127,12 @@
 ---
 
 ### 2026-04-02 新增
-- **Slay The Robot 夜间任务** (2026-04-11 凌晨)
-  - 构建成功：android_debug_20260411_0106.apk (31.4 MB)
-  - 移除调试输出语句（commit 5fda410）
-  - Google Drive 同步成功
-  - 当前分支 feat/combat-position-system-v2 领先 origin/main 21 个 commit
-  - 系统稳定，无新 bug
+- **Slay The Robot 夜间任务** (2026-04-11→12 凌晨)
+  - 新增 PositionSystem.gd（167行），统一管理位置战斗：距离计算、范围检测、武器射程、击退/后坐力
+  - 重构 ActionKnockback 和 ActionRecoil，统一使用 PositionSystem（减少 26 行）
+  - 修复 get_weapon_range() 调用（改用 Global.get_weapon_data()）
+  - Commits: 77760b7, d8991dd, 453f6df
+  - 待推进：CombatPositionHandler、ValidatorAttackRange 集成、Combat.gd 击退集成
 
 - **Slay The Robot 代码审查与 APK 构建**（2026-04-01 凌晨）
   - 代码审查：CombatRangeIndicator、ValidatorAttackRange、WeaponData 等战斗位置系统相关代码稳定
