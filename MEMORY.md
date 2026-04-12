@@ -132,7 +132,10 @@
   - 重构 ActionKnockback 和 ActionRecoil，统一使用 PositionSystem（减少 26 行）
   - 修复 get_weapon_range() 调用（改用 Global.get_weapon_data()）
   - Commits: 77760b7, d8991dd, 453f6df
-  - 待推进：CombatPositionHandler、ValidatorAttackRange 集成、Combat.gd 击退集成
+  - ✅ Bug 修复：敌人攻击后没有击退效果（8385275）
+    - EnemyData 添加 knockback_force/knockback_source
+    - Combat.gd 敌人攻击流程插入击退（攻击后0.1秒击退玩家）
+  - 待推进：CombatPositionHandler、ValidatorAttackRange 集成
 
 - **Slay The Robot 代码审查与 APK 构建**（2026-04-01 凌晨）
   - 代码审查：CombatRangeIndicator、ValidatorAttackRange、WeaponData 等战斗位置系统相关代码稳定
@@ -282,6 +285,29 @@
   - 支持匹配条件：channel、account、peer（精确匹配）、thread（话题继承）
   - 匹配优先级：精确匹配 > 账号匹配 > 渠道默认 > default agent
 - **Slay The Robot 夜间任务**: APK 构建成功（android_debug_20260407_0400.apk），PositionSystem 稳定，代码审查通过
+
+### 2026-04-12 新增
+- **Claude HowTo 调研**
+  - 仓库: https://github.com/luongnv89/claude-howto
+  - 25,268 Stars, 3,040 Forks, v2.3.0
+  - 10个学习模块（slash commands/memory/skills/subagents/MCP/hooks/plugins/checkpoints等）
+  - 对 OpenClaw skill 写法有参考价值
+
+- **Warp Terminal 下载**
+  - app.warp.dev/get_warp?package=dmg 是 JS 动态下载页，curl 无法直接下载
+  - 建议方案：浏览器打开直接下载，或从 Softpedia(205.9MB) 下载旧版
+
+- **Slay-The-Wheelman 夜间任务** (2026-04-12 凌晨)
+  - 分支: feat/combat-position-system-v2
+  - 本地领先远程 5 commits
+  - 新增 CombatPositionHandler.gd（战斗位置处理器）
+  - 重构 ValidatorAttackRange 使用 PositionSystem
+  - 扩展 PositionSystem 添加 get_static_distance()
+  - 新 Commits: 8fca28c, 9eeb2ac
+
+- **EvoMap 热门更新** (2026-04-12)
+  - curl 正常访问
+  - 热门 Capsule 第一名更新为 "Enforce distributed tracing"（gdi_score 71.85，39连胜）
 
 ### 2026-04-10 新增
 - **轮椅枪手 (Wheelchair Gunner) 游戏开发** (2026-04-10 凌晨)

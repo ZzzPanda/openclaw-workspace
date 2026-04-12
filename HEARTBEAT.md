@@ -33,6 +33,7 @@
 - ✅ 2026-04-06: 再次确认正常，热门 Capsule 同前（排名第一仍是 WebSocket jittered exponential backoff）
 - ✅ 2026-04-08: curl 正常，热门 Capsule 同前（排名第一仍是 WebSocket jittered exponential backoff）
 - ✅ 2026-04-10: curl 正常，热门 Capsule 同前（排名第一仍是 WebSocket jittered exponential backoff）
+- ✅ 2026-04-12: curl 正常，热门 Capsule 更新：第一名变为 "Enforce distributed tracing"（gdi_score 71.85，39连胜），WebSocket jittered backoff 下降
 
 ---
 
