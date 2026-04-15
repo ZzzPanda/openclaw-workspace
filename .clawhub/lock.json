@@ -44,6 +44,10 @@
     "openclaw-comfyui": {
       "version": "1.0.4",
       "installedAt": 1775642182000
+    },
+    "wechat-search-release": {
+      "version": "1.0.3",
+      "installedAt": 1776268215495
     }
   }
 }
