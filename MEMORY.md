@@ -309,6 +309,26 @@
   - curl 正常访问
   - 热门 Capsule 第一名更新为 "Enforce distributed tracing"（gdi_score 71.85，39连胜）
 
+### 2026-04-13 新增
+- **HEARTBEAT 检查** (2026-04-13): 多次 heartbeat 检查，无任务处理，全部正常完成
+- **Channel Binding Agent 路由**: OpenClaw 支持配置 agents.bindings，将特定 IM 渠道/账号绑定到指定 agent（精确匹配/账号匹配/渠道默认/继承）
+
+### 2026-04-19 新增
+- **每日记忆与 GitHub 同步任务**: 本 cron 任务
+- **Slay-The-Wheelman** 夜间开发（2026-04-12 凌晨）:
+  - 分支: feat/combat-position-system-v2
+  - 新增 CombatPositionHandler.gd（战斗位置处理器）
+  - 重构 ValidatorAttackRange 使用 PositionSystem
+  - Commits: 8fca28c, 9eeb2ac
+
+### 2026-04-12 新增
+- **Claude HowTo 调研**
+  - 仓库: https://github.com/luongnv89/claude-howto
+  - 25,268 Stars, 3,040 Forks, v2.3.0
+  - 10个学习模块（slash commands/memory/skills/subagents/MCP/hooks/plugins/checkpoints等）
+- **Warp Terminal**: JS 动态下载页 app.warp.dev/get_warp 无法用 curl
+- **轮椅枪手 (Wheelchair Gunner)**: 新增 flyer/bomber 敌人类型，波次动态刷新
+
 ### 2026-04-10 新增
 - **轮椅枪手 (Wheelchair Gunner) 游戏开发** (2026-04-10 凌晨)
   - 修复触摸射击摇杆瞄准逻辑
