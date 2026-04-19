@@ -22,3 +22,8 @@
   - 记录当天点滴到 memory/
   - 更新 MEMORY.md
   - 自动推送到 GitHub
+
+### C端AI硬件资讯
+- **时间:** 每周一、周四 10:00
+- **内容:** C端AI原生硬件新品追踪（Plaud、华为憨憨、Rabbit R1、AI眼镜等）
+- **脚本:** scripts/ai-hardware-news.sh

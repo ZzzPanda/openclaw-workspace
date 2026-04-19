@@ -39,6 +39,11 @@
 
 # Original tasks (keep empty to skip heartbeat API calls)
 
+## C端AI硬件资讯
+- [x] 脚本已创建: scripts/ai-hardware-news.sh
+- [x] Cron 已添加: 每周一/四 10:00 自动推送
+- [ ] 追踪产品清单: Plaud NotePin S / 华为憨憨 / 华为AI眼镜 / Rabbit R1 / Meta Ray-Ban
+
 ## 小红书发布 (Dingzhen 回来后)
 - [ ] 用户手动上传图片后，帮忙填写标题+正文
 - [ ] 设置可见性为"仅自己可见"
