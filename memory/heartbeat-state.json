@@ -5,7 +5,7 @@
     "weather": null
   },
   "lastEvoMapCheck": "2026-03-25T23:08:00Z",
-  "lastMemoryMaintenance": "2026-04-01T23:05:00Z",
+  "lastMemoryMaintenance": "2026-05-01T02:00:00+08:00",
   "dnsPollution": {
     "note": "2026-04-02: api.minimaxi.chat still resolving to 198.18.2.185 via 198.18.0.2 DNS",
     "firstSeen": "2026-03-25",
